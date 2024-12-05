@@ -179,3 +179,17 @@
 <script type=”text/javascript”>
    google.charts.load(‘current’, { ‘packages’: [‘corechart’] });
    google.charts.setOnLoadCallback(drawChart);
+
+   // Set the background color to black
+document.body.style.backgroundColor = "black";
+
+// Set the text color to white for the entire page
+document.body.style.color = "white";
+
+// If there are other elements that need specific styling
+const elements = document.querySelectorAll("*");
+elements.forEach(element => {
+    element.style.color = "white"; // Make text white
+    element.style.backgroundColor = "black"; // Ensure backgrounds are black
+});
+
